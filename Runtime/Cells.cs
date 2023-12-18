@@ -6,6 +6,8 @@ public static class Cells
 {
     private static Grid _grid;
 
+    public static Vector2 CellSize => _grid.cellSize;
+
     public static void Initialize(GridLayout.CellLayout layout, Vector3 cellSize, Vector3 cellGap, GridLayout.CellSwizzle swizzle)
     {
         if (!Application.isPlaying)
